@@ -1,0 +1,85 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 1686
+  },
+  "selected": true,
+  "name": "rich_menu_kit",
+  "chatBarText": "查看廚房",
+  "areas": [
+    {
+      "bounds": {
+        "x": 28,
+        "y": 22,
+        "width": 277,
+        "height": 1651
+      },
+      "action": {
+        "type": "postback",
+        "text": "",
+        "data": "menu=rich_menu_room"
+      }
+    },
+    {
+      "bounds": {
+        "x": 2021,
+        "y": 1234,
+        "width": 446,
+        "height": 438
+      },
+      "action": {
+        "type": "postback",
+        "text": "前往陽台",
+        "data": "menu=rich_menu_bal1"
+      }
+    },
+    {
+      "bounds": {
+        "x": 763,
+        "y": 1242,
+        "width": 1172,
+        "height": 425
+      },
+      "action": {
+        "type": "message",
+        "text": "可以點火，但不知道能做什麼"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1300,
+        "y": 29,
+        "width": 635,
+        "height": 540
+      },
+      "action": {
+        "type": "message",
+        "text": "發現一顆大冰塊"
+      }
+    },
+    {
+      "bounds": {
+        "x": 301,
+        "y": 693,
+        "width": 462,
+        "height": 974
+      },
+      "action": {
+        "type": "message",
+        "text": "抽屜有把菜刀"
+      }
+    },
+    {
+      "bounds": {
+        "x": 301,
+        "y": 29,
+        "width": 994,
+        "height": 355
+      },
+      "action": {
+        "type": "message",
+        "text": "櫃子裡有數個鍋子"
+      }
+    }
+  ]
+}

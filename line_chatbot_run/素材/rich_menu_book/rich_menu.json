@@ -1,0 +1,84 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 1686
+  },
+  "selected": true,
+  "name": "rich_menu_book",
+  "chatBarText": "查看書房",
+  "areas": [
+    {
+      "bounds": {
+        "x": 37,
+        "y": 29,
+        "width": 260,
+        "height": 1642
+      },
+      "action": {
+        "type": "postback",
+        "text": "",
+        "data": "menu=rich_menu_room"
+      }
+    },
+    {
+      "bounds": {
+        "x": 2186,
+        "y": 33,
+        "width": 281,
+        "height": 1646
+      },
+      "action": {
+        "type": "message",
+        "text": "書櫃放滿了書，吊燈上的巨蟒、無聲的入侵、未竟的奇蹟..."
+      }
+    },
+    {
+      "bounds": {
+        "x": 796,
+        "y": 1419,
+        "width": 1126,
+        "height": 248
+      },
+      "action": {
+        "type": "uri",
+        "uri": "https://tl.hkrev.info/"
+      }
+    },
+    {
+      "bounds": {
+        "x": 429,
+        "y": 367,
+        "width": 932,
+        "height": 590
+      },
+      "action": {
+        "type": "message",
+        "text": "桌面乾淨、抽屜也沒有東西"
+      }
+    },
+    {
+      "bounds": {
+        "x": 297,
+        "y": 29,
+        "width": 879,
+        "height": 219
+      },
+      "action": {
+        "type": "message",
+        "text": "從窗外望見遠方的大學升起陣陣濃煙"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1172,
+        "y": 144,
+        "width": 210,
+        "height": 194
+      },
+      "action": {
+        "type": "message",
+        "text": "坐上椅子"
+      }
+    }
+  ]
+}

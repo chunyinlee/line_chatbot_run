@@ -1,0 +1,23 @@
+[
+{
+  "type": "template",
+  "altText": "this is a buttons template",
+  "template": {
+    "type": "buttons",
+    "actions": [
+      {
+        "type": "uri",
+        "label": "好，我要離開",
+        "uri": "https://www.thenewslens.com/article/127718"
+      },
+      {
+        "type": "message",
+        "label": "不要",
+        "text": "繼續留在屋內"
+      }
+    ],
+    "title": "打開門了",
+    "text": "終於解開門鎖，要離開房間嗎？"
+  }
+}
+]

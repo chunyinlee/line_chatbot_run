@@ -1,0 +1,23 @@
+[
+{
+  "type": "template",
+  "altText": "this is a buttons template",
+  "template": {
+    "type": "buttons",
+    "actions": [
+      {
+        "type": "message",
+        "label": "打開水箱",
+        "text": "打開水箱"
+      },
+      {
+        "type": "message",
+        "label": "不要",
+        "text": "去別的地方看看吧"
+      }
+    ],
+    "title": "沖水",
+    "text": "沖水時，水箱的聲音有點特別，要打開看看嗎？"
+  }
+}
+]

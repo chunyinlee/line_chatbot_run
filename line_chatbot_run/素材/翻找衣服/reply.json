@@ -1,0 +1,24 @@
+[
+{
+  "type": "template",
+  "altText": "this is a buttons template",
+  "template": {
+    "type": "buttons",
+    "actions": [
+      {
+        "type": "postback",
+        "label": "要",
+        "text": "前往書房",
+        "data": "menu=rich_menu_book"
+      },
+      {
+        "type": "message",
+        "label": "不要",
+        "text": "去別的地方看看吧"
+      }
+    ],
+    "title": "翻找衣服",
+    "text": "從一件褲子口袋中找到一把鑰匙，上面寫著Book，難道是書房鑰匙？要試試看嗎？"
+  }
+}
+]

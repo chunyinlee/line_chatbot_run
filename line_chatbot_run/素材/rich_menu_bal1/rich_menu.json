@@ -1,0 +1,48 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 1686
+  },
+  "selected": true,
+  "name": "rich_menu_bal1",
+  "chatBarText": "查看陽台",
+  "areas": [
+    {
+      "bounds": {
+        "x": 29,
+        "y": 20,
+        "width": 276,
+        "height": 1651
+      },
+      "action": {
+        "type": "postback",
+        "text": "",
+        "data": "menu=rich_menu_kit"
+      }
+    },
+    {
+      "bounds": {
+        "x": 355,
+        "y": 25,
+        "width": 668,
+        "height": 553
+      },
+      "action": {
+        "type": "message",
+        "text": "打開洗衣機"
+      }
+    },
+    {
+      "bounds": {
+        "x": 296,
+        "y": 1473,
+        "width": 2167,
+        "height": 198
+      },
+      "action": {
+        "type": "message",
+        "text": "窗外裝設了鐵窗，根本離不開"
+      }
+    }
+  ]
+}

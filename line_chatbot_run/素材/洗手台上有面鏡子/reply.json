@@ -1,0 +1,23 @@
+[
+{
+  "type": "template",
+  "altText": "this is a buttons template",
+  "template": {
+    "type": "buttons",
+    "actions": [
+      {
+        "type": "message",
+        "label": "打開它",
+        "text": "只有發現一面口罩"
+      },
+      {
+        "type": "message",
+        "label": "不理它",
+        "text": "去別的地方看看吧"
+      }
+    ],
+    "title": "鏡子",
+    "text": "鏡子映照出自己的臉，卻不是很清楚，鏡子後方有個小櫃子"
+  }
+}
+]

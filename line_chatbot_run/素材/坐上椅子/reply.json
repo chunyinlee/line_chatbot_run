@@ -1,0 +1,23 @@
+[
+{
+  "type": "template",
+  "altText": "this is a buttons template",
+  "template": {
+    "type": "buttons",
+    "actions": [
+      {
+        "type": "message",
+        "label": "撿起紙條",
+        "text": "撿起紙條"
+      },
+      {
+        "type": "message",
+        "label": "假裝沒看到",
+        "text": "起身去別的地方看看吧"
+      }
+    ],
+    "title": "好像發現了什麼",
+    "text": "坐上椅子，望著書櫃，突然發現角落好像有張紙"
+  }
+}
+]

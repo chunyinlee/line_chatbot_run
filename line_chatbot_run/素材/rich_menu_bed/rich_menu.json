@@ -1,0 +1,84 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 1686
+  },
+  "selected": true,
+  "name": "rich_menu_bed",
+  "chatBarText": "查看臥室",
+  "areas": [
+    {
+      "bounds": {
+        "x": 29,
+        "y": 21,
+        "width": 272,
+        "height": 1646
+      },
+      "action": {
+        "type": "postback",
+        "text": "",
+        "data": "menu=rich_menu_room"
+      }
+    },
+    {
+      "bounds": {
+        "x": 2116,
+        "y": 29,
+        "width": 343,
+        "height": 726
+      },
+      "action": {
+        "type": "message",
+        "text": "翻找衣櫃，只有衣服"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1498,
+        "y": 29,
+        "width": 585,
+        "height": 227
+      },
+      "action": {
+        "type": "message",
+        "text": "從窗外望見太古廣場上有位身著黃衣的人"
+      }
+    },
+    {
+      "bounds": {
+        "x": 293,
+        "y": 25,
+        "width": 1176,
+        "height": 734
+      },
+      "action": {
+        "type": "message",
+        "text": "躺到床上，真舒服，快睡著了..."
+      }
+    },
+    {
+      "bounds": {
+        "x": 293,
+        "y": 751,
+        "width": 412,
+        "height": 397
+      },
+      "action": {
+        "type": "message",
+        "text": "打開抽屜"
+      }
+    },
+    {
+      "bounds": {
+        "x": 301,
+        "y": 1448,
+        "width": 974,
+        "height": 219
+      },
+      "action": {
+        "type": "message",
+        "text": "望向梳妝台"
+      }
+    }
+  ]
+}

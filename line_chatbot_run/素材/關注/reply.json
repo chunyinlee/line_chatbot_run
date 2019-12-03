@@ -1,0 +1,18 @@
+[
+{
+  "type": "template",
+  "altText": "this is a buttons template",
+  "template": {
+    "type": "buttons",
+    "actions": [
+      {
+        "type": "postback",
+        "label": "開始探索",
+        "data": "menu=rich_menu_room"
+      }
+    ],
+    "title": "你是忘記了，還是害怕想起來",
+    "text": "睜開眼，發現自己在一個空無一人的屋內。自己到底為什麼在這呢？"
+  }
+}
+]

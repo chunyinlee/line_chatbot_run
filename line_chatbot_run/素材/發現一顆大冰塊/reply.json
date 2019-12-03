@@ -1,0 +1,23 @@
+[
+{
+  "type": "template",
+  "altText": "this is a buttons template",
+  "template": {
+    "type": "buttons",
+    "actions": [
+      {
+        "type": "message",
+        "label": "要",
+        "text": "融化了"
+      },
+      {
+        "type": "message",
+        "label": "不要",
+        "text": "去別的地方看看吧"
+      }
+    ],
+    "title": "一顆大冰塊",
+    "text": "冰塊內好像有東西，要開火融化它嗎？"
+  }
+}
+]

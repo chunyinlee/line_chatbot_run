@@ -1,0 +1,108 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 1686
+  },
+  "selected": true,
+  "name": "rich_menu_bath",
+  "chatBarText": "查看浴室",
+  "areas": [
+    {
+      "bounds": {
+        "x": 29,
+        "y": 21,
+        "width": 272,
+        "height": 1658
+      },
+      "action": {
+        "type": "postback",
+        "text": "",
+        "data": "menu=rich_menu_room"
+      }
+    },
+    {
+      "bounds": {
+        "x": 2236,
+        "y": 767,
+        "width": 227,
+        "height": 512
+      },
+      "action": {
+        "type": "message",
+        "text": "架上空空的"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1386,
+        "y": 1411,
+        "width": 499,
+        "height": 256
+      },
+      "action": {
+        "type": "message",
+        "text": "洗手台上有面鏡子"
+      }
+    },
+    {
+      "bounds": {
+        "x": 854,
+        "y": 1275,
+        "width": 441,
+        "height": 388
+      },
+      "action": {
+        "type": "message",
+        "text": "上個廁所"
+      }
+    },
+    {
+      "bounds": {
+        "x": 338,
+        "y": 1324,
+        "width": 433,
+        "height": 347
+      },
+      "action": {
+        "type": "message",
+        "text": "打開水龍頭，沒有水流出來"
+      }
+    },
+    {
+      "bounds": {
+        "x": 425,
+        "y": 24,
+        "width": 652,
+        "height": 252
+      },
+      "action": {
+        "type": "message",
+        "text": "今天全城大罷工，街道上警民關係很緊張"
+      }
+    },
+    {
+      "bounds": {
+        "x": 330,
+        "y": 276,
+        "width": 2133,
+        "height": 446
+      },
+      "action": {
+        "type": "message",
+        "text": "躺入浴缸，為什麼我會被困在這呢？"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1072,
+        "y": 29,
+        "width": 1391,
+        "height": 252
+      },
+      "action": {
+        "type": "message",
+        "text": "躺入浴缸，為什麼我會被困在這呢？"
+      }
+    }
+  ]
+}

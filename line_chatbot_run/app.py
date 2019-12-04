@@ -1,35 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[39]:
-
-
 '''
-
 整體功能描述
-
-'''
-
-
-# In[40]:
-
-
-'''
-
 Application 主架構
-
 '''
 
 # 引用Web Server套件
@@ -76,9 +49,6 @@ def callback():
         abort(400)
 
     return 'OK'
-
-
-# In[41]:
 
 
 '''
@@ -224,13 +194,22 @@ textQuickReplyButton_chair = QuickReplyButton(
     )
 )
 #打開洗衣機
-textQuickReplyButton_wash = QuickReplyButton(
+textQuickReplyButton_wash_1 = QuickReplyButton(
     action=PostbackAction(
         label="要", 
         text="拿衣服，發現底部有五塊錢",
         data="menu=rich_menu_bal2"
     )
 )
+#打開洗衣機
+textQuickReplyButton_wash_2 = QuickReplyButton(
+    action=PostbackAction(
+        label="要", 
+        text="拿衣服，發現底部有五十塊錢",
+        data="menu=rich_menu_bal2"
+    )
+)
+
 #洗手台上有面鏡子
 textQuickReplyButton_mirror = QuickReplyButton(
     action=MessageAction(
@@ -246,11 +225,18 @@ textQuickReplyButton_ice = QuickReplyButton(
     )
 )
 #翻找衣服
-textQuickReplyButton_key = QuickReplyButton(
+textQuickReplyButton_key_1 = QuickReplyButton(
     action=PostbackAction(
         label="要", 
         text="前往書房",
         data="menu=rich_menu_book"
+    )
+)
+textQuickReplyButton_key_2 = QuickReplyButton(
+    action=PostbackAction(
+        label="要", 
+        text="前往書房，發現打不開！\n衣服裡好像還有別的鑰匙，再回去拿吧",
+        data="menu=rich_menu_room"
     )
 )
 #民主 不能使用url
@@ -280,8 +266,11 @@ quickReplyList_chair = QuickReply(
     items = [textQuickReplyButton_chair, textQuickReplyButton_NO]
 )
 #打開洗衣機
-quickReplyList_wash = QuickReply(
-    items = [textQuickReplyButton_wash, textQuickReplyButton_NO]
+quickReplyList_wash_1 = QuickReply(
+    items = [textQuickReplyButton_wash_1, textQuickReplyButton_NO]
+)
+quickReplyList_wash_2 = QuickReply(
+    items = [textQuickReplyButton_wash_2, textQuickReplyButton_NO]
 )
 
 #洗手台上有面鏡子
@@ -295,8 +284,11 @@ quickReplyList_ice = QuickReply(
 )
 
 #翻找衣服
-quickReplyList_key = QuickReply(
-    items = [textQuickReplyButton_key, textQuickReplyButton_NO]
+quickReplyList_key_1 = QuickReply(
+    items = [textQuickReplyButton_key_1, textQuickReplyButton_NO]
+)
+quickReplyList_key_2 = QuickReply(
+    items = [textQuickReplyButton_key_2, textQuickReplyButton_NO]
 )
 
 #民主
@@ -324,8 +316,10 @@ quickReplyTextSendMessage_toilet = TextSendMessage(text='沖水時，水箱的�
 quickReplyTextSendMessage_chair = TextSendMessage(text='坐上椅子，望著書櫃，突然發現角落好像有張紙',
                                                    quick_reply=quickReplyList_chair)
 
-quickReplyTextSendMessage_wash = TextSendMessage(text='有一堆衣服\n你要晾衣服嗎？',
-                                                   quick_reply=quickReplyList_wash)
+quickReplyTextSendMessage_wash_1 = TextSendMessage(text='有一堆衣服\n你要晾衣服嗎？',
+                                                   quick_reply=quickReplyList_wash_1)
+quickReplyTextSendMessage_wash_2 = TextSendMessage(text='有一堆衣服\n你要晾衣服嗎？',
+                                                   quick_reply=quickReplyList_wash_2)
 
 quickReplyTextSendMessage_mirror = TextSendMessage(text='鏡子映照出自己的臉，卻不是很清楚，鏡子後方有個小櫃子',
                                                    quick_reply=quickReplyList_mirror)
@@ -333,8 +327,10 @@ quickReplyTextSendMessage_mirror = TextSendMessage(text='鏡子映照出自己�
 quickReplyTextSendMessage_ice = TextSendMessage(text='冰塊內好像有東西，要開火融化它嗎？',
                                                    quick_reply=quickReplyList_ice)
 
-quickReplyTextSendMessage_key = TextSendMessage(text='從一件褲子口袋中找到一把鑰匙，上面寫著Book，難道是書房鑰匙？要試試看嗎？',
-                                                   quick_reply=quickReplyList_key)
+quickReplyTextSendMessage_key_1 = TextSendMessage(text='從一件褲子口袋中找到一把鑰匙，上面寫著S，好像是書房鑰匙？要試試看嗎？',
+                                                   quick_reply=quickReplyList_key_1)
+quickReplyTextSendMessage_key_2 = TextSendMessage(text='從一件褲子口袋中找到一把鑰匙，上面寫著B，難道是書房鑰匙？要試試看嗎？',
+                                                   quick_reply=quickReplyList_key_2)
 
 #quickReplyTextSendMessage_dem = TextSendMessage(text='終於解開門鎖，要離開房間嗎？',
 #                                                   quick_reply=quickReplyList_dem)
@@ -350,10 +346,10 @@ quickReplyTextSendMessage_key = TextSendMessage(text='從一件褲子口袋中�
 template_message_dict = {
     "上個廁所":quickReplyTextSendMessage_toilet,
     "坐上椅子":quickReplyTextSendMessage_chair,
-    "打開洗衣機":quickReplyTextSendMessage_wash,
+    #"打開洗衣機":quickReplyTextSendMessage_wash,
     "洗手台上有面鏡子":quickReplyTextSendMessage_mirror,
-    "發現一顆大冰塊":quickReplyTextSendMessage_ice,
-    "翻找衣服":quickReplyTextSendMessage_key
+    "發現一顆大冰塊":quickReplyTextSendMessage_ice
+    #"翻找衣服":quickReplyTextSendMessage_key
     #"民主":quickReplyTextSendMessage_dem
 }
 
@@ -381,7 +377,33 @@ from linebot.models import (
 @handler.add(MessageEvent,message=TextMessage)
 def process_text_message(event):
     # 發送
-    if event.message.text in template_message_dict.keys():
+    if event.message.text == "打開洗衣機":
+        import random
+        a = random.randint(1,2)
+        if a == 1:
+            line_bot_api.reply_message(
+                event.reply_token,
+                quickReplyTextSendMessage_wash_1
+            )
+        elif a == 2:
+            line_bot_api.reply_message(
+                event.reply_token,
+                quickReplyTextSendMessage_wash_2
+            )
+    elif event.message.text == "翻找衣服":
+        import random
+        a = random.randint(1,2)
+        if a == 1:
+            line_bot_api.reply_message(
+                event.reply_token,
+                quickReplyTextSendMessage_key_1
+            )
+        elif a == 2:
+            line_bot_api.reply_message(
+                event.reply_token,
+                quickReplyTextSendMessage_key_2
+            )
+    elif event.message.text in template_message_dict.keys():
         line_bot_api.reply_message(
             event.reply_token,
             template_message_dict.get(event.message.text)

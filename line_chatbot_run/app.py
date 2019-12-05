@@ -408,6 +408,27 @@ def process_text_message(event):
             event.reply_token,
             template_message_dict.get(event.message.text)
         )
+    elif event.message.text == "躺入浴缸，為什麼我會被困在這呢？":
+        import random
+        a = random.randint(1,2)
+        if a == 1:
+            pass
+        else:
+            line_bot_api.reply_message(
+                event.reply_token,
+                TextSendMessage(text="門外傳來聲音：\n若有來世\n你還願意嗎")
+            )
+    elif event.message.text == "望向梳妝台":
+        import random
+        a = random.randint(1,2)
+        result_message_array =[]
+        replyJsonPath = "素材/"+event.message.text+str(a)+"/reply.json"
+        result_message_array = detect_json_array_to_new_message_array(replyJsonPath)
+
+        line_bot_api.reply_message(
+            event.reply_token,
+            result_message_array
+        )
     else: 
         # 讀取本地檔案，並轉譯成消息
         result_message_array =[]
